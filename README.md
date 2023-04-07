@@ -55,8 +55,13 @@ php artisan ui adminlte --auth
 ```
 
 ```bash
-npm install && npm install laravel-mix --save-dev && npm run dev
+npm install
+npm install laravel-mix --save-dev # fixe error
+npm run dev
+# npm install && npm install laravel-mix --save-dev && npm run dev
 ```
+
+## Create Exemple 
 
 ```bash
 php artisan make:migration create_projects_table
