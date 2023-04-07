@@ -134,15 +134,15 @@ return [
 
         'save_schema_file' => true,
 
-        'localized' => false,
+        'localized' => true,
 
         'repository_pattern' => true,
 
         'resources' => false,
 
-        'factory' => false,
+        'factory' => true,
 
-        'seeder' => false,
+        'seeder' => true,
 
         'swagger' => false, // generate swagger for your APIs
 

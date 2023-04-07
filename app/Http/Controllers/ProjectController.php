@@ -47,7 +47,7 @@ class ProjectController extends AppBaseController
 
         $project = $this->projectRepository->create($input);
 
-        Flash::success('Project saved successfully.');
+        Flash::success(__('messages.saved', ['model' => __('models/projects.singular')]));
 
         return redirect(route('projects.index'));
     }
@@ -60,7 +60,7 @@ class ProjectController extends AppBaseController
         $project = $this->projectRepository->find($id);
 
         if (empty($project)) {
-            Flash::error('Project not found');
+            Flash::error(__('models/projects.singular').' '.__('messages.not_found'));
 
             return redirect(route('projects.index'));
         }
@@ -76,7 +76,7 @@ class ProjectController extends AppBaseController
         $project = $this->projectRepository->find($id);
 
         if (empty($project)) {
-            Flash::error('Project not found');
+            Flash::error(__('models/projects.singular').' '.__('messages.not_found'));
 
             return redirect(route('projects.index'));
         }
@@ -92,14 +92,14 @@ class ProjectController extends AppBaseController
         $project = $this->projectRepository->find($id);
 
         if (empty($project)) {
-            Flash::error('Project not found');
+            Flash::error(__('models/projects.singular').' '.__('messages.not_found'));
 
             return redirect(route('projects.index'));
         }
 
         $project = $this->projectRepository->update($request->all(), $id);
 
-        Flash::success('Project updated successfully.');
+        Flash::success(__('messages.updated', ['model' => __('models/projects.singular')]));
 
         return redirect(route('projects.index'));
     }
@@ -114,14 +114,14 @@ class ProjectController extends AppBaseController
         $project = $this->projectRepository->find($id);
 
         if (empty($project)) {
-            Flash::error('Project not found');
+            Flash::error(__('models/projects.singular').' '.__('messages.not_found'));
 
             return redirect(route('projects.index'));
         }
 
         $this->projectRepository->delete($id);
 
-        Flash::success('Project deleted successfully.');
+        Flash::success(__('messages.deleted', ['model' => __('models/projects.singular')]));
 
         return redirect(route('projects.index'));
     }
