@@ -1,19 +1,23 @@
 # Lab - Scaffolding
 
-## Création du projet laravel 
+- Documentation 
+  - https://infyom.com/open-source/laravelgenerator/docs/8.0/installation
 
-- Création du projet laravel de version 9
+Installing into existing Laravel Projects
+
+
+## Création du projet laravel
+
+- infyom.com est compatible avec laravel version 9
 
 ```bash
 composer create-project --prefer-dist laravel/laravel:^9.0 project-manager
 php artisan serve
 ```
+## Add Packages
 
-## Installation 
-- https://infyom.com/open-source/laravelgenerator/docs/8.0/installation
+Add following packages into composer.json while using it with Laravel 9.
 
-
-> Add following packages into composer.json while using it with Laravel 9.
 ```json
  "require": {
      "infyomlabs/laravel-generator": "^5.0",
@@ -21,12 +25,20 @@ php artisan serve
      "doctrine/dbal": "~2.3"
  }  
  ```
-> composer update
+## Composer Update
+
+ ```bash
+composer update
+```
+
+## Publish Vendor
 
 ```bash
 php artisan vendor:publish --provider="InfyOm\Generator\InfyOmGeneratorServiceProvider"
 ```
- 
+
+## Publish
+
 ```bash
 php artisan infyom:publish --localized
 ```
