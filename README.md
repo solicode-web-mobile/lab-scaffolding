@@ -43,6 +43,9 @@ php artisan vendor:publish --provider="InfyOm\Generator\InfyOmGeneratorServicePr
 php artisan infyom:publish --localized
 ```
 
+fixe error at RouteServiceProvider file 
+
+
 ```bash
 composer require infyomlabs/laravel-ui-adminlte
 ```

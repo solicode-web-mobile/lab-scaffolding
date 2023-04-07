@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d6a8f82f63ba074b76e4ae64d01eb8c",
+    "content-hash": "66a5367caf3fdfe356be4eeff9017711",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1647,7 +1647,7 @@
         },
         {
             "name": "infyomlabs/laravel-ui-adminlte",
-            "version": "v5.1.0",
+            "version": "5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/InfyOmLabs/laravel-ui-adminlte.git",
