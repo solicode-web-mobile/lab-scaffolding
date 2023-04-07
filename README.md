@@ -6,6 +6,7 @@
 
 ```bash
 composer create-project --prefer-dist laravel/laravel:^9.0 project-manager
+php artisan serve
 ```
 
 ## Installation 
