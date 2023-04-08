@@ -4,27 +4,23 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
  use Illuminate\Database\Eloquent\Factories\HasFactory;
-class Project extends Model
+class Task extends Model
 {
-    use HasFactory;    public $table = 'projects';
+    use HasFactory;    public $table = 'tasks';
 
     public $fillable = [
+        'project_id',
         'name',
         'description'
     ];
 
-    public function tasks()
-    {
-        return $this->hasMany('App\Models\Task');
-    }
-
-    
     protected $casts = [
         'name' => 'string',
         'description' => 'string'
     ];
 
     public static array $rules = [
+        'project_id' => 'required',
         'name' => 'required|string|max:255',
         'description' => 'required|string|max:255',
         'created_at' => 'nullable',

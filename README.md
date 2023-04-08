@@ -4,7 +4,7 @@ Installing into existing Laravel Projects
 
 ## Références
 - Documentation 
-  - https://infyom.com/open-source/laravelgenerator/docs/8.0/installation
+  - 
 
 
 
@@ -64,6 +64,14 @@ npm run dev
 ## Création de la base de données 
  - voir lab-database-laravel
 
+## GUI 
+
+```
+"require": {
+ "infyomlabs/generator-builder": "dev-master"
+}
+```
+
 ## Génération de code
 
 ```bash
@@ -74,4 +82,5 @@ php artisan infyom:scaffold Member --fromTable --table=members
  
 
 ## Références 
+- https://infyom.com/open-source/laravelgenerator/docs/8.0/installation
 - https://github.com/InfyOmLabs/laravel-generator

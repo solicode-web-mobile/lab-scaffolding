@@ -4,12 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-use App\Models\Project;
-use App\Models\Task;
-use App\Models\Member;
-
-
-class ProjectsTableSeeder extends Seeder
+class TasksTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,6 +13,6 @@ class ProjectsTableSeeder extends Seeder
      */
     public function run()
     {
-        Project::factory(50)->create();    
+
     }
 }
