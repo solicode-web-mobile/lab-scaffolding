@@ -9,18 +9,18 @@ class Project extends Model
     use HasFactory;    public $table = 'projects';
 
     public $fillable = [
-        'title',
+        'name',
         'description'
     ];
 
     protected $casts = [
-        'title' => 'string',
+        'name' => 'string',
         'description' => 'string'
     ];
 
     public static array $rules = [
-        'title' => 'required|string|max:255',
-        'description' => 'required|string|max:65535',
+        'name' => 'required|string|max:255',
+        'description' => 'required|string|max:255',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'
     ];

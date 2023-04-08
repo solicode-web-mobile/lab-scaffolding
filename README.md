@@ -8,17 +8,13 @@ Installing into existing Laravel Projects
 
 
 
-
-## Création du projet laravel
+## Installation de infyom
 
 - infyom.com est compatible avec laravel version 9
 
 ```bash
 composer create-project --prefer-dist laravel/laravel:^9.0 project-manager
-php artisan serve
 ```
-
-## Add Packages
 
 Add following packages into composer.json while using it with Laravel 9.
 
@@ -29,19 +25,19 @@ Add following packages into composer.json while using it with Laravel 9.
      "doctrine/dbal": "~2.3"
  }  
  ```
-## Composer Update
+Composer Update
 
  ```bash
 composer update
 ```
 
-## Publish Vendor
+Publish Vendor
 
 ```bash
 php artisan vendor:publish --provider="InfyOm\Generator\InfyOmGeneratorServiceProvider"
 ```
 
-## Publish
+Publish
 
 ```bash
 php artisan infyom:publish --localized
@@ -65,19 +61,17 @@ npm run dev
 # npm install && npm install laravel-mix --save-dev && npm run dev
 ```
 
-## Create Exemple 
+## Création de la base de données 
+ - voir lab-database-laravel
 
-```bash
-php artisan make:migration create_projects_table
-```
-
-```bash
-php artisan migrate
-```
+## Génération de code
 
 ```bash
 php artisan infyom:scaffold Project --fromTable --table=projects
+php artisan infyom:scaffold Task --fromTable --table=tasks
+php artisan infyom:scaffold Member --fromTable --table=members
 ```
  
+
 ## Références 
 - https://github.com/InfyOmLabs/laravel-generator

@@ -3,7 +3,7 @@
         <table class="table" id="projects-table">
             <thead>
             <tr>
-                <th>Title</th>
+                <th>Name</th>
                 <th>Description</th>
                 <th colspan="3">Action</th>
             </tr>
@@ -11,7 +11,7 @@
             <tbody>
             @foreach($projects as $project)
                 <tr>
-                    <td>{{ $project->title }}</td>
+                    <td>{{ $project->name }}</td>
                     <td>{{ $project->description }}</td>
                     <td  style="width: 120px">
                         {!! Form::open(['route' => ['projects.destroy', $project->id], 'method' => 'delete']) !!}

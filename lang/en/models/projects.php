@@ -5,7 +5,7 @@ return [
     'plural' => 'Projects',
     'fields' => [
         'id' => 'Id',
-        'title' => 'Title',
+        'name' => 'Name',
         'description' => 'Description',
         'created_at' => 'Created At',
         'updated_at' => 'Updated At',

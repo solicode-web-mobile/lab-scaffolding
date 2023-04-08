@@ -12,7 +12,7 @@
         "inView": false
     },
     {
-        "name": "title",
+        "name": "name",
         "dbType": "string",
         "htmlType": "text",
         "validations": "required|string|max:255|string|max:255",
@@ -25,9 +25,9 @@
     },
     {
         "name": "description",
-        "dbType": "text",
-        "htmlType": "textarea",
-        "validations": "required|string|max:65535|string|max:65535",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required|string|max:255|string|max:255",
         "searchable": true,
         "fillable": true,
         "primary": false,

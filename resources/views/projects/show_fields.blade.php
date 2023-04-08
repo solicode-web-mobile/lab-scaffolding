@@ -1,7 +1,7 @@
-<!-- Title Field -->
+<!-- Name Field -->
 <div class="col-sm-12">
-    {!! Form::label('title', __('models/projects.fields.title').':') !!}
-    <p>{{ $project->title }}</p>
+    {!! Form::label('name', __('models/projects.fields.name').':') !!}
+    <p>{{ $project->name }}</p>
 </div>
 
 <!-- Description Field -->
