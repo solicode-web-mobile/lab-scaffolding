@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c203e17acda52a1badead7603e0610e",
+    "content-hash": "11ab06a525a47d96513d1d98ccf4cd71",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1519,23 +1519,22 @@
         },
         {
             "name": "infyomlabs/generator-builder",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/InfyOmLabs/generator-builder.git",
-                "reference": "0825f7463ee4272925b1b25dc83eb8561854635d"
+                "reference": "7ae76cd061caff7ba31f9ec871626cbfcd040251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/InfyOmLabs/generator-builder/zipball/0825f7463ee4272925b1b25dc83eb8561854635d",
-                "reference": "0825f7463ee4272925b1b25dc83eb8561854635d",
+                "url": "https://api.github.com/repos/InfyOmLabs/generator-builder/zipball/7ae76cd061caff7ba31f9ec871626cbfcd040251",
+                "reference": "7ae76cd061caff7ba31f9ec871626cbfcd040251",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": ">=5.0",
                 "php": ">=5.5.9"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1572,7 +1571,7 @@
             ],
             "support": {
                 "issues": "https://github.com/InfyOmLabs/generator-builder/issues",
-                "source": "https://github.com/InfyOmLabs/generator-builder/tree/master"
+                "source": "https://github.com/InfyOmLabs/generator-builder/tree/v1.0.0"
             },
             "funding": [
                 {
@@ -1580,7 +1579,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2022-02-22T11:59:57+00:00"
+            "time": "2022-02-22T06:28:37+00:00"
         },
         {
             "name": "infyomlabs/laravel-generator",
@@ -8925,9 +8924,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "infyomlabs/generator-builder": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

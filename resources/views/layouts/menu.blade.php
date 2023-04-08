@@ -26,3 +26,10 @@
         <p>@lang('models/tasks.plural')</p>
     </a>
 </li>
+
+<li class="nav-item">
+    <a href="{{ route('posts.index') }}" class="nav-link {{ Request::is('posts*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-home"></i>
+        <p>@lang('models/posts.plural')</p>
+    </a>
+</li>

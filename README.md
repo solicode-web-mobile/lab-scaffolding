@@ -68,9 +68,18 @@ npm run dev
 
 ```
 "require": {
- "infyomlabs/generator-builder": "dev-master"
-}
+   "infyomlabs/generator-builder": "^1.0"
+} 
 ```
+Add Service Provider
+InfyOm\GeneratorBuilder\GeneratorBuilderServiceProvider::class, 
+
+```
+php artisan vendor:publish
+```
+
+
+
 
 ## Génération de code
 
@@ -78,6 +87,7 @@ npm run dev
 php artisan infyom:scaffold Project --fromTable --table=projects
 php artisan infyom:scaffold Task --fromTable --table=tasks
 php artisan infyom:scaffold Member --fromTable --table=members
+php artisan infyom:scaffold Post --fromTable --table=posts
 ```
  
 
