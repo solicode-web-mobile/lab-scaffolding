@@ -2,18 +2,18 @@
 
 namespace Database\Factories;
 
-use App\Models\Project;
+use App\Models\Member;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 
-class ProjectFactory extends Factory
+class MemberFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Project::class;
+    protected $model = Member::class;
 
     /**
      * Define the model's default state.
@@ -24,8 +24,8 @@ class ProjectFactory extends Factory
     {
         
         return [
-            'name' => $this->faker->text($this->faker->numberBetween(5, 255)),
-            'description' => $this->faker->text($this->faker->numberBetween(5, 255)),
+            'first_name' => $this->faker->firstName,
+            'last_name' => $this->faker->lastName,
             'created_at' => $this->faker->date('Y-m-d H:i:s'),
             'updated_at' => $this->faker->date('Y-m-d H:i:s')
         ];

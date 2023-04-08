@@ -27,5 +27,13 @@ class Task extends Model
         'updated_at' => 'nullable'
     ];
 
-    
+    public function project(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(\App\Models\Project::class, 'project_id');
+    }
+
+    public function memberTasks(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(\App\Models\MemberTask::class, 'task_id');
+    }
 }

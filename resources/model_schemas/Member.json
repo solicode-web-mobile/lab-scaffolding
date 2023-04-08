@@ -12,19 +12,7 @@
         "inView": false
     },
     {
-        "name": "project_id",
-        "dbType": "bigInteger,false,true",
-        "htmlType": "number",
-        "validations": "required",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-    },
-    {
-        "name": "name",
+        "name": "first_name",
         "dbType": "string",
         "htmlType": "text",
         "validations": "required|string|max:255|string|max:255",
@@ -36,7 +24,7 @@
         "inView": true
     },
     {
-        "name": "description",
+        "name": "last_name",
         "dbType": "string",
         "htmlType": "text",
         "validations": "required|string|max:255|string|max:255",
@@ -73,10 +61,10 @@
     },
     {
         "type": "relation",
-        "relation": "mt1,Project,project_id"
+        "relation": "1tm,MemberTask,member_id"
     },
     {
         "type": "relation",
-        "relation": "1tm,MemberTask,task_id"
+        "relation": "1tm,Post,member_id"
     }
 ]

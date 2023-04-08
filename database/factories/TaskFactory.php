@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Task;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+use App\Models\Project;
 
 class TaskFactory extends Factory
 {
@@ -22,7 +23,11 @@ class TaskFactory extends Factory
      */
     public function definition()
     {
-        
+        $project = Project::first();
+        if (!$project) {
+            $project = Project::factory()->create();
+        }
+
         return [
             'project_id' => $this->faker->word,
             'name' => $this->faker->text($this->faker->numberBetween(5, 255)),

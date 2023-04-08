@@ -13,12 +13,6 @@ class Project extends Model
         'description'
     ];
 
-    public function tasks()
-    {
-        return $this->hasMany('App\Models\Task');
-    }
-
-    
     protected $casts = [
         'name' => 'string',
         'description' => 'string'
@@ -31,5 +25,8 @@ class Project extends Model
         'updated_at' => 'nullable'
     ];
 
-    
+    public function tasks(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(\App\Models\Task::class, 'project_id');
+    }
 }
