@@ -1,9 +1,12 @@
 # Lab - Scaffolding
 
+Installing into existing Laravel Projects
+
+## Références
 - Documentation 
   - https://infyom.com/open-source/laravelgenerator/docs/8.0/installation
 
-Installing into existing Laravel Projects
+
 
 
 ## Création du projet laravel
@@ -14,6 +17,7 @@ Installing into existing Laravel Projects
 composer create-project --prefer-dist laravel/laravel:^9.0 project-manager
 php artisan serve
 ```
+
 ## Add Packages
 
 Add following packages into composer.json while using it with Laravel 9.
